@@ -2,11 +2,15 @@ import { defineConfig } from 'dumi';
 // @ts-ignore
 import { globalCSS } from './styles/global.less.ts';
 const repo = 'indexed-toolkit-dumi-doc'; 
+
 export default defineConfig({
   outputPath: 'docs-dist',
   themeConfig: {
     name: 'indexeddb',
-      nav: [
+    socialLinks: {
+      github: 'https://github.com/LiCHUYA/indexeddb-toolkit'
+    },
+    nav: [
       { title: '指南', link: '/guide' },
       { title: 'API', link: '/api/api-reference' }
     ],
